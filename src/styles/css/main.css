@@ -7,3 +7,37 @@ section {
     opacity: 0;
     pointer-events: none;
   }
+
+.gameboard-container {
+    display: grid;
+}
+
+/* Styling for the grid cells */
+.cell {
+    position: relative;
+    border: 2px solid #000;
+}
+
+/* Media query for small screens */
+@media screen and (max-width: 600px) {
+    .gameboard-container {
+      width: 90vw; /* Adjust the width as needed */
+      height: 90vw; /* Adjust the height as needed */
+    }
+  }
+  
+/* Media query for medium screens */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    .gameboard-container {
+        width: 80vw; /* Adjust the width as needed */
+        height: 80vw; /* Adjust the height as needed */
+    }
+}
+
+/* Media query for larger screens */
+@media screen and (min-width: 901px) {
+    .gameboard-container {
+        width: 600px; /* Adjust the width as needed */
+        height: 600px; /* Adjust the height as needed */
+    }
+}

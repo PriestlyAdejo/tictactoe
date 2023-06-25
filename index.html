@@ -7,10 +7,64 @@
 </head>
 <body>
     <header>
-        <h1>Tic Tac Toe Game</h1>
+        <h1>Tic Tac Toe Game | By Priestly Adejo</h1>
         <p>I am buillding a small version of game in console.</p>
     </header>
 
-    <script type="module" src="/src/scripts/js/main.js"></script>
+    <section class="gameboard hidden">
+        <div class="gameboard-container">
+            <!-- Fill in with JS as a grid then style -->
+        </div>
+    </section>
+
+    <section class="startmenu">
+        <div class="menu-container">
+            <img src="./src/assets/images/tictactoe-image.jpg" alt="Animated image of tictactoe grid">
+            <div class="options">
+                <fieldset>
+                    <legend>Player Details</legend>
+                    <label for="playerName">Player Name:</label>
+                    <input type="text" id="playerName" maxlength="20" required>
+                    <br>
+                    <label>Player Symbol:</label>
+
+                    <label for="symbolX">X:</label>
+                    <input type="radio" id="symbolX" name="playerSymbol" value="X" checked>
+
+                    <label for="symbolO">O:</label>
+                    <input type="radio" id="symbolO" name="playerSymbol" value="O">
+                    
+                </fieldset>
+              
+                <fieldset>
+                    <legend>CPU Difficulty</legend>
+
+                    <label for="easy">Bait:</label>
+                    <input type="radio" id="easy" name="playerSymbol" value="Bait" checked>
+                    
+                    <label for="medium">Orwellian:</label>
+                    <input type="radio" id="medium" name="playerSymbol" value="Orwellian" checked>
+
+                    <label for="hard">Lovecraftian:</label>
+                    <input type="radio" id="hard" name="playerSymbol" value="Lovecraftian" checked>
+
+                </fieldset>
+              
+                <button type="submit">Start Game</button>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footer-container">
+            <h4>Made with ❤️ by Priestly</h4>
+            <h4 class="sep">|</h4>
+            <h4><a href="https://github.com/PriestlyAdejo/tictactoe">Github Repo</a></h4>
+            <h4 class="sep">|</h4>
+            <h4><a href="https://github.com/PriestlyAdejo/tictactoe">My Linkedin</a></h4>
+        </div>
+    </footer>
+
 </body>
 </html>
